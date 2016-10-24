@@ -1,0 +1,304 @@
+<!DOCUMENT html>
+<html>
+	<head>
+		<title> </title>
+	</head>
+	<style> 
+		body {
+			margin:0;
+		}
+		#banner1 {
+			position:relative;
+			width:100vw;
+			height:300px;
+			background-color:#11EE22;
+			background-image:url(http://placekitten.com/1360/720);
+			background-repeat:no-repeat;
+			background-position:center center;
+			background-size:cover;
+			z-index: -2;
+		}
+		#banner2 {
+			position:relative;
+			top:450px;
+			width:100vw;
+			height:300px;
+			background-color:black;
+			background-image:url(http://a5.mzstatic.com/us/r30/Purple7/v4/e3/ff/42/e3ff421a-273e-575f-d398-9369db6633ee/screen1024x1024.jpeg);
+			background-position:center center;
+			background-size:cover;
+			z-index: -2;
+		}
+		#body1 {
+			width:100vw;
+			height:150px;
+			text-align: center;
+			display:inline-block;
+			z-index:-2;
+		}
+		#tagtop {
+			position:relative;
+			width:40vw;
+			height:55px;
+			top:60px;
+			left:29%;
+			background-color:orange;
+			
+			
+		}
+		#name {
+			position:relative;
+			top: 60px;	
+		}
+	
+		#profileimg {
+			position:relative;
+			width:140px;
+			height:140px;
+			z-index:10;
+			border-radius:140px;
+		}
+		#img {
+			position:relative; 
+			text-align:center;
+			top:166px;
+			z-index:10;
+		}
+		#body2 {
+			width:100vw;
+			height:175px;
+			background-color:grey;
+			display:inline-block;
+		}
+		.bodyimg1 {
+			vertical-align:top;
+			position:relative;
+			width:15vw;
+			height:15vh;
+			min-width:100px;
+			min-height:100px;
+			background-image:url(http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/112010/lancerevolutionx.png?itok=j1pYIL8B);
+			background-color:#5555FF;
+			background-position:center center;
+			background-size:cover;
+			margin:0px 4% 0px 0px;
+			display:inline-block;
+			transition:1s;
+			top:9vh;
+			z-index:5;
+		}
+		.bodyimg2 {
+			vertical-align:top;
+			position:relative;
+			width:15vw;
+			height:15vh;
+			min-width:100px;
+			min-height:100px;
+			background-image:url(http://forums.na.leagueoflegends.com/board/attachment.php?attachmentid=826264);
+			background-color:#5555FF;
+			background-position:center center;
+			background-size:cover;
+			margin:0px 4% 0px 0px;
+			display:inline-block;
+			transition:1s;
+			top:9vh;
+			z-index:5;
+		}
+		.bodyimg3 {
+			vertical-align:top;
+			position:relative;
+			width:15vw;
+			height:15vh;
+			min-width:100px;
+			min-height:100px;
+			background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJNfAqae6Ym36-wQVy-Qqx1b6ywIDOq6hiDNn8frJKnTqB-8Io);
+			background-position:center center;
+			background-size:cover;
+			margin:0px 4% 0px 0px;
+			display:inline-block;
+			transition:1s;
+			top:9vh;
+		}
+		.bodyimg4 {
+			vertical-align:top;
+			position:relative;
+			width:15vw;
+			height:15vh;
+			min-width:100px;
+			min-height:100px;
+			background-image:url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7HAB2d2l0VmX3gBQkZDL2kFUtdAx3x0XzXHr-iDBJ90Fzo49qWQ);
+			background-color:#5555FF;
+			background-position:center center;
+			background-size:cover;
+			margin:0px 4% 0px 0px;
+			display:inline-block;
+			transition:1s;
+			top:9vh;
+			z-index:5;
+		}
+		.bodyimg5 {
+			vertical-align:top;
+			position:relative;
+			width:15vw;
+			height:15vh;
+			min-width:100px;
+			min-height:100px;
+			background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGP25f9O3RmJS3_84TPnpbyTc86rWiEHg3AqsRrux5Ng-2_DHdpw);
+			background-color:#5555FF;
+			background-position:center center;
+			background-size:cover;
+			margin:0px 4% 0px 0px;
+			display:inline-block;
+			transition:1s;
+			top:9vh;
+			z-index:5;
+		}
+		.bodyimg1:hover {
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+		
+		.bodyimg2:hover {
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+		
+		.bodyimg3:hover {
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+		
+		.bodyimg4:hover {
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+		
+		.bodyimg5:hover {
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+		
+		.inbody {
+			position:relative;
+			width:9vw;
+			height:5vh;
+			top:-2vh;
+			left:10vw;
+			background-color:black;
+			display:inline-block;
+			z-index:5;
+			color:#FFF;
+			font-size:70%;
+		}
+		#bio {
+			position:absolute;
+			width:100vw;
+			height:500px;
+			background-color:#10183f;
+			z-index:6;
+		}
+		#bioimg {
+			position:absolute;
+			left:-0vh;
+			max-width:390px;
+			max-height:390px;
+			width:36vw;
+			height:auto;
+			margin:7%;
+		}
+		#biotxt	{
+			width:40vw;
+			height:auto;
+			position:relative;
+			text-align:center;
+			float:left;
+			left:50vw;
+			top:8vh;
+			color:white;
+			white-space:pre-line;
+			font-size:70%;
+			}
+			
+	
+	
+	</style>
+	<body>
+		
+		<div id='banner1'> 
+		<div id='tagtop' onclick="changeColor()" style="text-align:center;"><font size="6">Dank Memes</font> </div>
+		
+		<div id='img'><img src="http://1.bp.blogspot.com/-iIdccNGOLaQ/VHMF8oKbWdI/AAAAAAAARVE/E_DHB2PbrqE/s1600/2015-Mitsubishi-Lancer-Evolution-1.jpg" id="profileimg"></img></div>
+		
+		
+		</div>
+		
+		
+		<div id='body1'>
+		<center id='name'> Dickson Chan </center>
+		</div>
+		<div id='body2'>
+		
+		<div class="bodyimg1">
+		<div class="inbody"><a href="https://en.wikipedia.org/wiki/Mitsubishi_Lancer_Evolution">Evolution X</a></div>
+		</div>
+		<div class="bodyimg2">
+		<div class="inbody"><a href="http://na.leagueoflegends.com/">LoL</a></div>
+		</div>
+		<div class="bodyimg3">
+		<div class="inbody"><a href="http://www.armani.com/ca/giorgioarmani">Giorgio Armani</a></div>
+		</div>
+		<div class="bodyimg4">
+		<div class="inbody"><a href="http://www.pokemonxy.com/en-us/root/">Pokemon X&Y </a></div>
+		</div>
+		<div class="bodyimg5">
+		<div class="inbody"><a href="https://www.reddit.com/r/soccerspirits/">Soccer Spirits</a></div>
+		</div>
+		
+		</div>
+	
+		<div id="bio"> 
+		
+		<h1 style="position:relative; text-align:center; float:right; left:-40vw; color:white;"> Bio </h1>
+		<p id="biotxt">
+		Hello! My name is Dickson, full name Dickson Kal Chan. 20 years old. This is gonna be a short biography that serve as an 
+		introduction. As you can see above, those are the things that I can relate to the most. First being the Evo X, a line of japanese
+		tuner vehicles that I'm in love with (I drive one too). Second is the game "League of Legends". Though I no longer play it now
+		it without a doubt was a big part of my life a few years back. I also ended up reaching my goal of diamond rank in the game
+		#humblebrag. Next is Griogio Armani, though it is armani in general, I very much like these lines of clothing and their
+		style in accessories. Second to the right is Pokemono XY. I grew up playing pokemon on the gameboy color my sister had, it was 
+		only when Pokemon XY came by when I was to re-live the nostalgia, definitely a fantastic game. Last but not least is 
+		something you may not be familiar with. No, it is not anime, manga or whatever you're thinking. It is a mobile game called Soccer Spirits.
+		I've definitely had my fair share of expriences with mobile 'free-mium' apps but that's a story for another day. Soccer Spirits
+		(which I'll refer to as SS from here on) is by far the only one I found worth playing. I'll spare you the details but essentially
+		it, as the name implies, is a soccer themed game where you recruit 'players' and use their unique stats and abilites to build the
+		ultimate soccer team which you control in real time and every decision matters. I always question if the money I've spent on SS
+		was really worth it but eventually I learned that if it makes me happy it's not something worth griping over.
+		</p>
+		
+		<img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/14330035_10207633694495861_9057961113592765947_n.jpg?oh=33cae1508cc90c5d414bfd9f115e5bc1&oe=587CC6F0" id="bioimg"></img>
+		
+		</div>
+	
+		<div id="banner2">
+		
+		<p style="position:relative; text-align:center; font-size:300%; top:50px;"> Dat boi <p>
+		
+		</div>
+		
+		<script>	
+			var tagColor = document.getElementById("tagtop");
+			
+			function changeColor(){
+				tagColor.style.backgroundColor = "blue";
+			}
+	
+		</script>
+	
+	
+	</body>
+	

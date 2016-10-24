@@ -1,0 +1,167 @@
+<!DOCUMENT html>
+<html>
+	<head>
+		<title> </title>
+	</head>
+	<style>
+		body {
+			margin:20px;
+			background-image:url("http://kaba35.com/wp-content/uploads/2015/11/Savin-NY-Website-Background-Web.jpg");
+			background-size:cover;
+		}
+		#addbut {
+			position:absolute;
+			display:inline-block;
+			width:10vw;
+			height:5vh;
+		}
+		#clearbut {
+			position:absolute;
+			display:inline-block;
+			left:75%;
+			width:20vw;
+			height:5vh;
+		}
+		#form {
+			position:absolute;
+			left:15%;
+			height:auto;
+			display:inline-block;
+			padding:10px;
+			z-index:10;
+		}
+		#addarea {
+			position:absolute;
+			float:left;
+			width:100%;
+			text-align:center;
+			top:25%;
+		}
+		.classImg {
+			position:absolute;
+			display:inline-block;
+			left:20%;
+			top:15%;
+			width:20%;
+			height:auto;
+			max-height:15vh;
+			background-image:url();
+			background-size:cover;
+		}
+		.classH3 {
+			position:absolute;
+			display:inline-block;
+			width:30vw;
+			height:10px;
+		}
+		.divColor{
+			position:absolute;
+			display:inline-block;
+			top: 40%;
+			width:30vw;
+			height:10px;
+		}
+		.slide1{
+			position:fixed;
+			left:50vw;
+			top:-500px;
+			transition: 0.5s;
+		}
+		.slide2{
+			position:fixed;
+			left:50vw;
+			top:-500px;
+			transition: 0.5s;
+		}
+	</style>
+	<body>
+	
+		<input type="button" value="Add stuffs" id="addbut"></input>
+		<button id="clearbut"> Clear stuffs </button>
+		<form id="form">
+		H3: <br>
+		<input type="text" placeholder="Enter text here" id="H3"><br>
+		IMG: <br>
+		<input type="text" placeholder="Put image link here" id="IMG"><br>
+		DIV: <br>
+		<input type="text" placeholder="Enter color here(names)" id="DIV"><br>
+		</form>
+		<p class='slide1' id="slide1"> Created Item </p>
+		<p class='slide2' id="slide2"> Cleared Item(s) </p>
+		<div id="addarea"> </div>
+		
+		<script>
+			var clearBut = document.getElementById("clearbut");
+			var addBut = document.getElementById("addbut");
+			var addArea = document.getElementById("addArea");
+			var slideIn = document.getElementById("slide1");
+			var slideOut = document.getElementById("slide2");
+		
+			clearBut.onclick = function(){
+					
+				slideIn.style.top = "-500";
+				slideOut.style.top = "0";
+	
+				document.getElementById("addarea").innerHTML = "";
+			}
+			
+			addBut.onclick = function(){
+				
+				slideIn.style.top = "0";
+				slideOut.style.top = "-500";
+			
+				var newItem = document.createElement("div");
+				var createImg = document.createElement("img");
+				var createH3 = document.createElement("h3");
+				var appColor = document.createElement("div");
+				var IMG = document.getElementById("IMG");
+				var H3 = document.getElementById("H3");
+				var DIVcolor = document.getElementById("DIV");
+				
+				document.getElementById("addarea").appendChild(newItem);
+				newItem.style.width = "80vw";
+				newItem.style.height = "150px";
+				newItem.style.display = "inline-block";
+				newItem.style.position = "relative";
+				newItem.style.backgroundColor = DIVcolor.value;
+				newItem.style.zindex = "-5";
+				
+				
+				createImg.src = IMG.value;
+				createImg.style.margin = "5px";
+				createImg.className = "classImg";
+				
+				
+				createH3.innerHTML = H3.value;
+				createH3.className = "classH3";
+				
+				appColor.innerHTML = DIVcolor.value;
+				appColor.className = "divColor";
+				
+				newItem.appendChild(createImg);
+
+				newItem.appendChild(createH3);
+				
+				newItem.appendChild(appColor);
+				
+				
+			}
+			
+		</script>
+	</body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
